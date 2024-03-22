@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>oh.studio</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+
+        }
+        #main{
+            height: 90%;
+            width: 100%;
+      
+        }
+        #header{
+            width: 100%;
+            height: 15%;
+
+        
+            display: flex;
+            justify-content: center;
+            padding-top: 2%;
+
+        }
+        nav{
+            width: 23%;
+            height: 7%;
+            padding: .2%;
+            z-index: 1000;
+            background: linear-gradient(rgba(0, 0, 0, .05),rgba(0, 0, 0, .05));
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, .05);
+           border-radius: 50px;
+
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+          
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding-top: 3%;
+            padding-bottom: 4%;
+            width: 30%;
+             border-radius: 50px;
+          
+            text-align: center;
+            font-size: 90%;
+            font-weight: 500;
+        }
+
+   
+  
+        #main3{
+            width: 100%;
+            height:86%;
+            text-align: center;
+            padding-top: 8%;
+            font-size: 220%;
+        }
+        #spn1,#spn2{
+            font-size: 230%;
+        }
+      
+        #spn2{
+            color: gray;
+           
+        }
+        #spn2:hover{
+         color: rgb(156, 156, 156); 
+         cursor: pointer; 
+        }
+        footer{
+            height: 10%;
+          
+            padding-left: 2%;
+            padding-right: 2%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        footer #bar{
+        
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #bar a{
+            text-decoration: none;
+            color: black;
+
+        }
+        #bar a:hover{
+            filter: blur(1px);
+        }
+        #staricon2{
+            font-size: 220%;
+        }
+        #main3 p{
+            animation: opener 1.5s forwards .1s ease-in-out;
+        }
+        #a3{
+            background-color: white;
+        }
+
+
+
+        @keyframes opener {
+            from{
+            
+                position: relative;
+                top: 20%;
+                opacity: 0;
+            }
+            to{
+                position: relative;
+                top: 0%;
+                opacity: 1;
+            }
+            
+        }
+
+      
+      
+     
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a id="a3" href="contact.html">Contact</a>
+              </nav>
+       
+          </div>
+      
+    <div id="main3">
+        <p>
+            <span id="spn1">Let's work together.</span> <br>
+            <span id="spn2">Get in touch.</span>
+        </p>
+
+    </div>
+    <footer>
+        <p><i id="staricon2" class="ri-virus-fill"></i> &copy; TSK Suhail 2023</p>
+        <div id="bar">
+         <a href="#">Twitter</a>
+         <a href="#">Linkedin</a>
+         <a href="#">Mail</a>
+        </div>
+    </footer>
+
+
+   
+
+    
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>oh.studio</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+
+        }
+        #main{
+            height: 90%;
+            width: 100%;
+      
+        }
+        #header{
+            width: 100%;
+            height: 15%;
+
+        
+            display: flex;
+            justify-content: center;
+            padding-top: 2%;
+
+        }
+        nav{
+            width: 23%;
+            height: 7%;
+            padding: .2%;
+            z-index: 1000;
+            background: linear-gradient(rgba(0, 0, 0, .05),rgba(0, 0, 0, .05));
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, .05);
+           border-radius: 50px;
+
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+          
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding-top: 3%;
+            padding-bottom: 4%;
+            width: 30%;
+             border-radius: 50px;
+        
+            text-align: center;
+            font-size: 90%;
+            font-weight: 500;
+        }
+        #a2{
+            background-color: white;
+        }
+        #text{
+            height: 75%;
+            width: 100%;
+        
+            text-align: center;
+            padding-top: 14%;
+        }
+        #text p{
+           
+            font-size: 450%;
+            font-weight: 500;
+            animation: opener 1.5s forwards ease-in-out ;
+           
+        }
+        #text a{
+         
+            text-decoration: none;
+            color: black;
+            position: relative;
+            top: 7%;
+            background-color: rgba(0, 0, 0, .05);
+            padding: .7%;
+            border-radius: 50px;  
+            animation: opener2 1.5s forwards ease-in-out ;
+          
+        }
+        #main2{
+            width: 100%;
+            padding-left: 1%;
+            padding-right: 1%;
+            display: grid;
+            grid-template-columns: 44% 44%;
+            justify-content: space-around;
+            animation: opener 1.5s forwards .1s ease-in-out;
+        }
+        #main2 img{
+            height: 75vh;
+            width: 45vw;
+            margin-top: 4%;
+            border-radius: 10px;
+
+        }
+        #main2 img:hover{
+            filter: blur(2.5px);
+        }
+       
+    
+        #main3{
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            padding-top: 8%;
+            font-size: 220%;
+        }
+        #spn4{
+            font-weight: 900;
+        }
+      
+        #spn2{
+            color: gray;
+           
+        }
+        #spn2:hover{
+         color: rgb(156, 156, 156); 
+         cursor: pointer; 
+        }
+        footer{
+            height: 10%;
+          
+            padding-left: 2%;
+            padding-right: 2%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        footer #bar{
+        
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #bar a{
+            text-decoration: none;
+            color: black;
+
+        }
+        #bar a:hover{
+            filter: blur(1px);
+        }
+        #staricon2{
+            font-size: 220%;
+        }
+        #main3{
+         margin-top: 10%;
+        }
+        #main3 p{
+            animation: opener 1.5s forwards .1s ease-in-out;
+        }
+        #main4{
+         text-align: center;
+         height: 100%;
+         width: 100%;
+       
+         padding-top: 10%;
+
+        }
+        #main4 p{
+            font-size: 230%;
+        }
+        #main4 a{
+            text-decoration: none;
+            color: black;
+           
+            background-color: rgba(0, 0, 0, .05);
+            padding: .7%;
+            border-radius: 50px;  
+          
+        }
+        #main5{
+        
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            justify-content: space-around;
+        }
+        #worked{
+                width: 100%;
+                height: 100%;
+                padding-top: 5%;
+            
+                text-align: center;
+
+            }
+              #worked a{
+            text-decoration: none;
+            color: black;
+           
+            background-color: rgba(0, 0, 0, .05);
+            padding: 2.2%;
+            border-radius: 50px;  
+          
+        }
+        #main6{
+            text-align: center;
+         height: 30%;
+         width: 100%;
+       
+         padding-top: 5%;
+        }
+        #main6 p{
+            font-size: 230%;
+        }
+        #main6 a{
+            text-decoration: none;
+            color: black;
+           
+            background-color: rgba(0, 0, 0, .05);
+            padding: .7%;
+            border-radius: 50px;  
+          
+        }
+        #main7{
+            width: 100%;
+            padding-left: 1%;
+            padding-right: 1%;
+            display: grid;
+            grid-template-columns: 22% 22% 22% 22%;
+            justify-content: space-around;
+            animation: opener 1.5s forwards .1s ease-in-out;
+        }
+        #main7 img{
+            height: 33vh;
+            width: 23vw;
+            margin-top: 2%;
+            border-radius: 10px;
+            scale: .5;
+
+        }
+        
+      
+       
+
+
+
+        @keyframes opener {
+            from{
+            
+                position: relative;
+                top: 20%;
+                opacity: 0;
+            }
+            to{
+                position: relative;
+                top: 0%;
+                opacity: 1;
+            }
+            
+        }
+        @keyframes opener2 {
+            from{
+                position: relative;
+                top: 45%;
+                opacity: 0;
+            }
+            to{
+                position: relative;
+                top: 7%;
+                opacity: 1;
+            }
+            
+        }
+      
+      
+      
+     
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <nav>
+                <a href="index.html">Home</a>
+                <a id="a2" href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+              </nav>
+       
+          </div>
+
+         <div id="text">
+            <p>  Hey <span id="spn4">II</span> I'm TSK</p>
+          
+         </div>
+
+    </div>
+
+    <div id="main2">
+        <img src="https://t3.ftcdn.net/jpg/00/70/88/70/360_F_70887045_Mq2V9XYMjfAoR60GnqOvUuyMC9NiZWgm.jpg" alt="">
+        <img src="https://assets.aboutamazon.com/dims4/default/7bd0f69/2147483647/strip/false/crop/2000x1125+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F39%2F5b%2F652ae82e483491872080c74a6f7d%2Fsunstone-hero-2000x1125.jpg" alt="">
+       
+
+    </div>
+
+    <div id="main4">
+        <a href="#">About</a> <br> <br> <br> <br>  
+        <P>A freelance designer based in the UK. <br> I combine my experience in product and <br> brand to solve problems, tell stories, and <br> create compelling experiences.</P>
+        <br> <br> <br> <br>   <br> <br> <br> <br> 
+        <a href="#">Experience</a> <br> <br> <br> <br> 
+        <p>Where I've worked</p> 
+
+
+    </div>
+    <div id="main5">
+        <div id="worked">
+            <h5>2017-present</h5>
+            <h2>OH.STUDIO</h2>
+            <h5>Freelancer Designer</h5>
+            <br>
+            <a href="#">Director</a>
+    
+        </div>
+        <div id="worked">
+            <h5>2021-present</h5>
+            <h2>Friendly.STUDIO</h2>
+            <h5>Lead Product Designer</h5>
+            <br>
+            <a href="#">Freelance</a>
+    
+        </div>
+        <div id="worked">
+            <h5>2022</h5>
+            <h2>R/GO</h2>
+            <h5>Senior Visual Designer</h5>
+            <br>
+            <a href="#">Freelance</a>
+    
+        </div>
+        <div id="worked">
+            <h5>2021</h5>
+            <h2>R/GO</h2>
+            <h5>Senior Visual Designer</h5>
+            <br>
+            <a href="#">Freelance</a>
+    
+        </div>
+        <div id="worked">
+            <h5>2021</h5>
+            <h2>AKQA</h2>
+            <h5>Senior Designer</h5>
+            <br>
+            <a href="#">Freelance</a>
+    
+        </div>
+        <div id="worked">
+            <h5>2020</h5>
+            <h2>AKQA</h2>
+            <h5>Senior Designer</h5>
+            <br>
+            <a href="#">Freelance</a>
+    
+        </div>
+        <div id="worked">
+            <h5>2019</h5>
+            <h2>UI CENTRIC</h2>
+            <h5>Senior Product Designer</h5>
+            <br>
+            <a href="#">Freelance</a>
+    
+        </div>
+        <div id="worked">
+            <h5>2017</h5>
+            <h2>Agency TK</h2>
+            <h5>Senior Digital Designer</h5>
+            <br>
+            <a href="#">Permament</a>
+    
+        </div>
+        <div id="worked">
+            <h5>2012</h5>
+            <h2>Agency TK</h2>
+            <h5>Digital Designer</h5>
+            <br>
+            <a href="#">Permament</a>
+    
+        </div>
+        
+
+    </div>
+    <div id="main6">
+        <a href="#">Clients</a> <br> <br> <br> <br> 
+        <p>Who I've worked with</p> 
+    </div>
+
+    <div id="main7">
+      
+            <img src="https://i.pinimg.com/originals/96/23/9f/96239fee6cf89bbbd3f587c9aa6f8095.png" alt="">
+             <img src="https://cdn.freebiesupply.com/logos/large/2x/r-ga-logo-black-and-white.png" alt="">
+             <img src="https://static.vecteezy.com/system/resources/previews/010/994/232/original/nike-logo-black-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg" alt="">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Olympic_Rings_black.svg/800px-Olympic_Rings_black.svg.png" alt="">
+             <img src="https://gswarrington.com/wp-content/uploads/2017/08/schuh-black.png" alt="">
+             <img src="https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/e/AmazonStores/A1F83G8C2ARO7P/e3b99a954becc573143c97ffac220a0a.w1440.h1440.png" alt="">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/AKQA-Logo.svg" alt="">
+             <img src="https://mma.prnewswire.com/media/779630/World_Gold_Council_Logo.jpg?p=facebook" alt="">
+             <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Channel_5_%28UK%29_2016.svg" alt="">
+             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG3Y7EBuQhqxAubDumYY9wtD3bT0xt99IjVNm0CyAs6E0jk9rF" alt="">
+             <img src="https://cdn.freebiesupply.com/logos/large/2x/here-1-logo-black-and-white.png" alt="">
+             <img src="https://investnortheastengland.co.uk/wp-content/uploads/2020/07/Zerolight-Logo.jpg" alt="">
+        
+
+    </div>
+
+
+
+
+    <div id="main3">
+        <p>
+            <span id="spn1">Let's work together.</span> <br>
+            <span id="spn2">Get in touch.</span>
+        </p>
+
+    </div>
+    <footer>
+        <p><i id="staricon2" class="ri-virus-fill"></i> &copy; Oli Harris 2023</p>
+        <div id="bar">
+         <a href="#">Twitter</a>
+         <a href="#">Linkedin</a>
+         <a href="#">Mail</a>
+        </div>
+    </footer>
+
+
+   
+
+    
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>oh.studio</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+
+        }
+        #main{
+            height: 90%;
+            width: 100%;
+      
+        }
+        #header{
+            width: 100%;
+            height: 15%;
+
+        
+            display: flex;
+            justify-content: center;
+            padding-top: 2%;
+
+        }
+        nav{
+            width: 23%;
+            height: 7%;
+            padding: .2%;
+            z-index: 1000;
+            background: linear-gradient(rgba(0, 0, 0, .05),rgba(0, 0, 0, .05));
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, .05);
+           border-radius: 50px;
+
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+          
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding-top: 3%;
+            padding-bottom: 4%;
+            width: 30%;
+             border-radius: 50px;
+       
+            text-align: center;
+            font-size: 90%;
+            font-weight: 500;
+        }
+        #a1{
+            background-color: white;
+        }
+        #text{
+            height: 75%;
+            width: 100%;
+        
+            text-align: center;
+            padding-top: 5%;
+        }
+        #text p{
+            font-size: 450%;
+            font-weight: 500;
+            animation: opener 1.5s forwards ease-in-out ;
+           
+        }
+        #text a{
+            text-decoration: none;
+            color: black;
+            position: relative;
+            top: 7%;
+            background-color: rgba(0, 0, 0, .05);
+            padding: .7%;
+            border-radius: 50px;  
+            animation: opener2 1.5s forwards ease-in-out ;
+          
+        }
+        #main2{
+            width: 100%;
+            padding-left: 1%;
+            padding-right: 1%;
+            display: grid;
+            grid-template-columns: 44% 44%;
+            justify-content: space-around;
+            animation: opener 1.5s forwards .1s ease-in-out;
+        }
+        #main2 img{
+            height: 75vh;
+            width: 45vw;
+            margin-top: 4%;
+            border-radius: 10px;
+
+        }
+        #main2 img:hover{
+            filter: blur(2.5px);
+        }
+        #shop button{
+            z-index: 1000;
+            position: fixed;
+            top: 90%;
+            left: 47%;
+            font-size: 100%;
+            height: 7%;
+            width: 8%;
+            background-color: black;
+            color: white;
+            border-radius: 50px;
+            animation: opener3 1.3s forwards ease-in-out;
+        }
+        #staricon{
+            color: white;
+            padding-right: 5%;
+        
+        }
+        #main3{
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            padding-top: 8%;
+            font-size: 220%;
+        }
+      
+        #spn2{
+            color: gray;
+           
+        }
+        #spn2:hover{
+         color: rgb(156, 156, 156); 
+         cursor: pointer; 
+        }
+        footer{
+            height: 10%;
+          
+            padding-left: 2%;
+            padding-right: 2%;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        footer #bar{
+        
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #bar a{
+            text-decoration: none;
+            color: black;
+
+        }
+        #bar a:hover{
+            filter: blur(1px);
+        }
+        #staricon2{
+            font-size: 220%;
+        }
+        #main3 p{
+            animation: opener 1.5s forwards .1s ease-in-out;
+        }
+
+
+
+        @keyframes opener {
+            from{
+            
+                position: relative;
+                top: 20%;
+                opacity: 0;
+            }
+            to{
+                position: relative;
+                top: 0%;
+                opacity: 1;
+            }
+            
+        }
+        @keyframes opener2 {
+            from{
+                position: relative;
+                top: 45%;
+                opacity: 0;
+            }
+            to{
+                position: relative;
+                top: 7%;
+                opacity: 1;
+            }
+            
+        }
+        @keyframes opener3 {
+            from{
+                position: fixed;
+                top: 130%;
+                opacity: 0;
+            }
+            to{
+                position: fixed;
+                 top: 90%;
+                opacity: 1;
+            }
+            
+        }
+      
+      
+     
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <nav>
+                <a id="a1" href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+              </nav>
+       
+          </div>
+         <a id="shop" href="#"><button><i id="staricon" class="ri-virus-fill"></i>shop</button></a>
+         <div id="text">
+            <p>  A brand and product <br> designer working with <br> clients globally</p>
+            <a href="#">Expertise</a>      <a href="#">Branding</a>       <a href="#">Product</a>         <a href="#">Design System</a>
+         </div>
+
+    </div>
+
+    <div id="main2">
+        <img src="https://t3.ftcdn.net/jpg/00/70/88/70/360_F_70887045_Mq2V9XYMjfAoR60GnqOvUuyMC9NiZWgm.jpg" alt="">
+        <img src="https://assets.aboutamazon.com/dims4/default/7bd0f69/2147483647/strip/false/crop/2000x1125+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F39%2F5b%2F652ae82e483491872080c74a6f7d%2Fsunstone-hero-2000x1125.jpg" alt="">
+        <img src="https://i.ytimg.com/vi/aTf7AMVOoDY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDVDr2fAr3OF_f_zfUhzcItfo-Ihg" alt="">
+        <img src="https://www.kirtilals.com/images/media/category_main_banner/8/Diamond_earrings_829.webp" alt="">
+        <img src="https://i.etsystatic.com/10687464/r/il/567386/5171665567/il_fullxfull.5171665567_bglt.jpg" alt="">
+        <img src="https://media.istockphoto.com/id/942181662/photo/girl-holding-smart-phone-with-online-shop-concept-on-screen.jpg?s=1024x1024&w=is&k=20&c=SzEeHlXKfbAYl8Y1oSEOSY_77hYrLyiPI_BSe_-aIxU=" alt="">
+        <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-276748,resizemode-75,msid-100708018/top-trending-products/electronics/laptops/best-8-gb-graphics-card-laptops-in-india-for-unparalleled-gaming-performance/best-8-gb-graphics-card-laptops.jpg" alt="">
+        <img src="https://elie.net/static/images/banner/evolution-of-the-https-lock-icon-infographic.jpg" alt="">
+        <img src="https://images.milled.com/2020-11-25/Ap3JTaOeVtW96p4H/2chI8XeEUMPg.jpeg" alt="">
+        <img src="https://ioactive.com/wp-content/uploads/2017/09/img1-2.jpg" alt="">
+        <img src="https://kaamfix.com/wp-content/uploads/2023/01/CMC_3800-scaled.webp" alt="">
+        <img src="https://www.dancepassionfl.com/wp-content/uploads/2023/01/ballroom_dance_couple_dancing_1.jpg" alt="">
+
+    </div>
+    <div id="main3">
+        <p>
+            <span id="spn1">Let's work together.</span> <br>
+            <span id="spn2">Get in touch.</span>
+        </p>
+
+    </div>
+    <footer>
+        <p><i id="staricon2" class="ri-virus-fill"></i> &copy; TSK Suhail 2023</p>
+        <div id="bar">
+         <a href="#">Twitter</a>
+         <a href="#">Linkedin</a>
+         <a href="#">Mail</a>
+        </div>
+    </footer>
+
+
+   
+
+    
+</body>
+</html>
